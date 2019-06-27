@@ -15,22 +15,22 @@ Most of our projects have a reverse proxy service that take care of the https, c
 
 ### packages
 
-- Express
-- compression
-- http-proxy-middleware
-- serve-favicon
-- greenlock-express
-- greenlock-store-fs
-- @appsaloon/logger-js
-- body-parser
-- simple-oauth2
-- _got_ (to talk about)
-- mysql
+- [express](https://www.npmjs.com/package/express)
+- [compression](https://www.npmjs.com/package/compression)
+- [http-proxy-middleware](https://www.npmjs.com/package/http-proxy-middleware)
+- [serve-favicon](https://www.npmjs.com/package/serve-favicon)
+- [greenlock-express](https://www.npmjs.com/package/greenlock-express)
+- [greenlock-store-fs](https://www.npmjs.com/package/greenlock-store-fs)
+- [@appsaloon/logger-js](https://www.npmjs.com/package/@appsaloon/logger-js)
+- [body-parser](https://www.npmjs.com/package/body-parser)
+- [simple-oauth2](https://www.npmjs.com/package/simple-oauth2)
+- _[got](https://www.npmjs.com/package/got)_ (to talk about)
+- [mysql](https://www.npmjs.com/package/mysql)
 
 ### utility packages
 
-- fs-extra
-- _date-fns / momentjs_ (to talk about)
+- [fs-extra](https://www.npmjs.com/package/fs-extra)
+- _[date-fns](https://www.npmjs.com/package/date-fns) / [moment](https://www.npmjs.com/package/moment)_ (to talk about)
 
 ### tools
 
@@ -75,6 +75,7 @@ A set of guidelines that makes our lives easier.
 2. Design your api in Postman and create tests to verify your api works as expected. Share this with the team workspace. This will make debugging easier for the rest of the team. Create local and production environments and share these.
 3. Start implementing the @appsaloon/logger-js from the start
 4. Add Eslint "standard" style to every project
+5. Add favicon to the proxy server
 
 ## FrontEnd
 
