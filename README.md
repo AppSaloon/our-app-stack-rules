@@ -32,6 +32,10 @@ Most of our projects have a reverse proxy service that take care of the https, c
 - [fs-extra](https://www.npmjs.com/package/fs-extra)
 - _[date-fns](https://www.npmjs.com/package/date-fns) / [moment](https://www.npmjs.com/package/moment)_ (to talk about)
 
+### viz packages
+
+- [react-vis](https://www.eea.europa.eu/data-and-maps/dashboards/air-pollutant-emissions-data-viewer-2)
+
 ### tools
 
 - Postman
