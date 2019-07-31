@@ -26,6 +26,7 @@ Most of our projects have a reverse proxy service that take care of the https, c
 - [simple-oauth2](https://www.npmjs.com/package/simple-oauth2)
 - _[got](https://www.npmjs.com/package/got)_ (to talk about)
 - [mysql](https://www.npmjs.com/package/mysql)
+- [cron](https://www.npmjs.com/package/cron)
 
 ### utility packages
 
