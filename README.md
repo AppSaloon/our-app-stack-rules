@@ -27,11 +27,13 @@ Most of our projects have a reverse proxy service that take care of the https, c
 - _[got](https://www.npmjs.com/package/got)_ (to talk about)
 - [mysql](https://www.npmjs.com/package/mysql)
 - [cron](https://www.npmjs.com/package/cron)
+- [mongodb](https://mongodb.github.io/node-mongodb-native/)
 
 ### utility packages
 
 - [fs-extra](https://www.npmjs.com/package/fs-extra)
 - _[date-fns](https://www.npmjs.com/package/date-fns) / [moment](https://www.npmjs.com/package/moment)_ (to talk about)
+- [lodash](https://lodash.com)
 
 ### viz packages
 
@@ -44,7 +46,7 @@ Most of our projects have a reverse proxy service that take care of the https, c
 ### Code style
 
 Eslint standard
-```
+```Javascript
 "eslintConfig": {
     "extends": "standard",
     "rules": {
@@ -87,3 +89,13 @@ A set of guidelines that makes our lives easier.
 1. Start with create-react-app
 2. Implement the @appsaloon/logger-js from the start
 3. _https://facebook.github.io/create-react-app/docs/setting-up-your-editor_ (to talk about)
+
+# Dockerfile templates
+
+[dockerfiles](DOCKERFILES.md)
+
+
+# Pipelines templates
+
+[pipelines](PIPELINES.md)
+
