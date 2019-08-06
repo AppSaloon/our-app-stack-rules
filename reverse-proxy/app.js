@@ -20,6 +20,7 @@ app.use((req, res, next) => {
     if (req.method === 'OPTIONS') return res.sendStatus(200)
     next()
 })
+/* CORS end */
 
 const sampleAppHost = 'http://sample-app'
 const sampleApiServerHost = 'http://sample-api-server'
@@ -38,7 +39,7 @@ app.use('/api', proxyMiddleWare({
 
 /* If all things fail */
 app.get('/', function (req, res) {
-    res.send('This is my reverse proxy server.')
+    res.send('This is my reverse proxy server. :)')
 })
 
 app.use((err, req, res, next) => {
