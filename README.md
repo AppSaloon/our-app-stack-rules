@@ -94,8 +94,10 @@ A set of guidelines that makes our lives easier.
 
 [dockerfiles](DOCKERFILES.md)
 
-
 # Pipelines templates
 
 [pipelines](PIPELINES.md)
 
+# Stackfiles templates
+
+[stackfiles](STACKFILES.md)
