@@ -101,3 +101,7 @@ A set of guidelines that makes our lives easier.
 # Stackfiles templates
 
 [stackfiles](STACKFILES.md)
+
+# Testing in react
+
+[tests](tests)

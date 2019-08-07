@@ -1,0 +1,27 @@
+.TodoList {
+  width: 400px;
+}
+
+.TodoList-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TodoList ul {
+  margin: 0;
+  padding: 0;
+}
+
+.TodoList ul > :nth-child(even) {
+  background-color: #eaeaea;
+}
+
+.Todo {
+  display: flex;
+  align-items: center;
+}
+
+.Todo p {
+  margin: 0;
+  flex: 1;
+}

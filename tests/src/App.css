@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-button {
+  width: 400px;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
