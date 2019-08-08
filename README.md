@@ -48,13 +48,7 @@ Most of our projects have a reverse proxy service that take care of the https, c
 Eslint standard
 ```Javascript
 "eslintConfig": {
-    "extends": "standard",
-    "rules": {
-      "indent": [
-        "error",
-        4
-      ]
-    }
+    "extends": "standard"
   },
   "devDependencies": {
     "eslint": "^5.14.1",
