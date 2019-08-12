@@ -11,9 +11,7 @@ All projects are run within a docker container.
 All projects contain a Dockerfile and are build via pipelines of bitbucket and stored in our own docker registery.
 All projects are orchestrated with a docker stack file and managed by portainer.
 Whenever a bitbucket pipeline is done it triggers a webhook of portainer to download the latest image from the registery and redeploy the latest version
-Most of our projects have a reverse proxy service that take care of the https, compression and routing. 
-All repo's contain a CHANGELOG.md and are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
-Commit messages follow [conventionalcommits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) style.
+Most of our projects have a reverse proxy service that take care of the https, compression and routing.
 
 ### packages
 
@@ -27,7 +25,7 @@ Commit messages follow [conventionalcommits](https://www.conventionalcommits.org
 - [@appsaloon/logger-js](https://www.npmjs.com/package/@appsaloon/logger-js)
 - [body-parser](https://www.npmjs.com/package/body-parser)
 - [simple-oauth2](https://www.npmjs.com/package/simple-oauth2)
-- _[got](https://www.npmjs.com/package/got)_ (to talk about)
+- [got](https://www.npmjs.com/package/got)
 - [mysql](https://www.npmjs.com/package/mysql)
 - [cron](https://www.npmjs.com/package/cron)
 - [mongodb](https://mongodb.github.io/node-mongodb-native/)
@@ -38,17 +36,11 @@ Commit messages follow [conventionalcommits](https://www.conventionalcommits.org
 - _[date-fns](https://www.npmjs.com/package/date-fns) / [moment](https://www.npmjs.com/package/moment)_ (to talk about)
 - [lodash](https://lodash.com)
 
-### viz packages
-
-- [react-vis](https://www.eea.europa.eu/data-and-maps/dashboards/air-pollutant-emissions-data-viewer-2)
-
 ### tools
 
 - Postman
 
 ### Code style
-
-#### Node.js
 
 Eslint standard
 ```Javascript
@@ -64,7 +56,16 @@ Eslint standard
   }
 ```
 
-#### React-app
+## Frontend
+
+### packages
+
+- [create-react-app](https://www.npmjs.com/package/create-react-app)
+- [prop-type](https://www.npmjs.com/package/prop-types)
+- [react-vis](https://www.eea.europa.eu/data-and-maps/dashboards/air-pollutant-emissions-data-viewer-2)
+- [ky](https://www.npmjs.com/package/ky)
+
+### Code style
 
 Eslint standard
 ```Javascript
@@ -84,15 +85,13 @@ Eslint standard
   }
 ```
 
-## Frontend
-
-### packages
-
-- create-react-app
-
 # Our Rules
 
 A set of guidelines that makes our lives easier.
+
+All repo's contain a CHANGELOG.md and are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+
+Commit messages follow [conventionalcommits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) style.
 
 ## Server
 
