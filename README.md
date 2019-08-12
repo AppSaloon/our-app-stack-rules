@@ -48,18 +48,39 @@ Commit messages follow [conventionalcommits](https://www.conventionalcommits.org
 
 ### Code style
 
+#### Node.js
+
 Eslint standard
 ```Javascript
 "eslintConfig": {
     "extends": "standard"
   },
   "devDependencies": {
-    "eslint": "^5.14.1",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0"
+  }
+```
+
+#### React-app
+
+Eslint standard
+```Javascript
+"eslintConfig": {
+    "extends": [
+        "react-app",
+        "standard"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-react": "^7.14.3"
   }
 ```
 
