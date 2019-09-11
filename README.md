@@ -48,6 +48,7 @@ Eslint standard
     "extends": "standard"
   },
   "devDependencies": {
+    "eslint": "^6.3.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.1.0",
@@ -76,6 +77,7 @@ Eslint standard
     ]
   },
   "devDependencies": {
+    "eslint": "^6.3.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.1.0",
