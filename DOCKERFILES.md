@@ -36,15 +36,14 @@ CMD ["serve", "-l", "80", "-s", "."]
 ### node server
 
 ```Dockerfile
-FROM node:dubnium-alpine
+# pick a version from https://hub.docker.com/_/node/
+FROM node:alpine
 
 # add tini to handle signals and zombie process reaping
 RUN apk add --no-cache tini
 ENTRYPOINT ["/sbin/tini", "--"]
 
 WORKDIR /server
-
-COPY package*.json ./
 
 # install build dependencies to generate any required binaries
 # https://github.com/nodejs/docker-node/issues/282
@@ -54,9 +53,10 @@ RUN apk --no-cache --virtual build-dependencies add \
     python \
     make \
     g++ \
-    git \
-    && npm install --prod \
-    && apk del build-dependencies
+    git
+COPY package*.json ./
+RUN npm install --prod
+RUN apk del build-dependencies
 
 COPY src/ ./
 
