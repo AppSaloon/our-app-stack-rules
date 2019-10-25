@@ -31,6 +31,7 @@ Most of our projects have a reverse proxy service that take care of the https, c
 - [mongodb](https://mongodb.github.io/node-mongodb-native/)
 - [mongoose](https://www.npmjs.com/package/mongoose)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [heartbeat-middleware](https://www.npmjs.com/package/@appsaloon/heartbeat-middleware)
 
 ### utility packages
 
