@@ -6,21 +6,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@appsaloon/logger-js": "^1.0.6",
+    "@appsaloon/logger-js": "^1.0.7",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "greenlock-express": "^2.7.12",
-    "http-proxy-middleware": "^0.19.1"
+    "greenlock-express": "^4.0.3",
+    "http-proxy-middleware": "^1.0.4"
   },
   "eslintConfig": {
     "extends": "standard"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-promise": "^4.2.1"
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }

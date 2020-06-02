@@ -7,11 +7,11 @@
 
 What we use in our stack and what rules do we like to live by when developing our code
 
-# Our stack
+## Our stack
 
-## Server side
+### Server side
 
-### setup
+#### setup
 
 All projects are run within a docker container.
 All projects contain a Dockerfile and are build via pipelines of bitbucket and stored in our own docker registery.
@@ -19,7 +19,7 @@ All projects are orchestrated with a docker stack file and managed by portainer.
 Whenever a bitbucket pipeline is done it triggers a webhook of portainer to download the latest image from the registery and redeploy the latest version
 Most of our projects have a reverse proxy service that take care of the https, compression and routing.
 
-### packages
+#### packages
 
 - [express](https://www.npmjs.com/package/express)
 - [compression](https://www.npmjs.com/package/compression)
@@ -39,36 +39,37 @@ Most of our projects have a reverse proxy service that take care of the https, c
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [heartbeat-middleware](https://www.npmjs.com/package/@appsaloon/heartbeat-middleware)
 
-### utility packages
+#### utility packages
 
 - [fs-extra](https://www.npmjs.com/package/fs-extra)
-- _[date-fns](https://www.npmjs.com/package/date-fns) / [moment](https://www.npmjs.com/package/moment)_ (to talk about)
+- [date-fns](https://www.npmjs.com/package/date-fns)
 - [lodash](https://lodash.com)
 
-### tools
+#### tools
 
 - Postman
 
-### Code style
+#### Code style
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Eslint standard
+
+```js
+  npm i eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard --save-dev
+```
+
+Add `eslintConfig` to package.json
+
 ```Javascript
-"eslintConfig": {
+  "eslintConfig": {
     "extends": "standard"
-  },
-  "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
   }
 ```
 
-## Frontend
+### Frontend
 
-### packages
+#### packages
 
 - [create-react-app](https://www.npmjs.com/package/create-react-app)
 - [prop-type](https://www.npmjs.com/package/prop-types)
@@ -77,31 +78,38 @@ Eslint standard
 
 ### Code style
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 Eslint standard
+
+```js
+  npm i eslint-config-standard eslint-plugin-node eslint-plugin-promise eslint-plugin-standard --save-dev
+```
+
+Add `eslintConfig` to package.json
+
 ```Javascript
 "eslintConfig": {
     "extends": [
         "react-app",
         "standard"
     ]
-  },
-  "devDependencies": {
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0"
   }
 ```
 
-# Our Rules
+## Our Rules
 
 A set of guidelines that makes our lives easier.
 
+### Keep a Changelog
+
 All repo's contain a CHANGELOG.md and are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+
+### Conventional commits
 
 Commit messages follow [conventionalcommits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) style.
 
-## Server
+### Server
 
 1. Start with the architecture of the server setup. Always start with the proxy. Adding it later is more difficult
 2. Design your api in Postman and create tests to verify your api works as expected. Share this with the team workspace. This will make debugging easier for the rest of the team. Create local and production environments and share these.
@@ -109,24 +117,24 @@ Commit messages follow [conventionalcommits](https://www.conventionalcommits.org
 4. Add Eslint "standard" style to every project
 5. Add favicon to the proxy server
 
-## FrontEnd
+### FrontEnd
 
 1. Start with create-react-app
 2. Implement the @appsaloon/logger-js from the start
-3. _https://facebook.github.io/create-react-app/docs/setting-up-your-editor_ (to talk about)
+3. _<https://facebook.github.io/create-react-app/docs/setting-up-your-editor>_ (to talk about)
 
-# Dockerfile templates
+## Dockerfile templates
 
 [dockerfiles](DOCKERFILES.md)
 
-# Pipelines templates
+## Pipelines templates
 
 [pipelines](PIPELINES.md)
 
-# Stackfiles templates
+## Stackfiles templates
 
 [stackfiles](STACKFILES.md)
 
-# Testing in react
+## Testing in react
 
 [tests](tests)

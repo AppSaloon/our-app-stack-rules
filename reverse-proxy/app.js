@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const favicon = require('serve-favicon')
 const compression = require('compression')
-const proxyMiddleWare = require('http-proxy-middleware')
+const { createProxyMiddleware } = require('http-proxy-middleware')
 
 const app = express()
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
@@ -26,13 +26,13 @@ const sampleAppHost = 'http://sample-app'
 const sampleApiServerHost = 'http://sample-api-server'
 
 /* App server */
-app.use('/app', proxyMiddleWare({
+app.use('/app', createProxyMiddleware({
   target: sampleAppHost,
   pathRewrite: { '^/app': '/' }
 }))
 
 /* Api server */
-app.use('/api', proxyMiddleWare({
+app.use('/api', createProxyMiddleware({
   target: sampleApiServerHost,
   pathRewrite: { '^/api': '/' }
 }))
