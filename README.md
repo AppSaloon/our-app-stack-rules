@@ -1,4 +1,10 @@
 # our-app-stack-rules
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Keep a changelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-%23E05735
+)](https://keepachangelog.com/en/1.0.0/)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 What we use in our stack and what rules do we like to live by when developing our code
 
 # Our stack
