@@ -56,7 +56,7 @@ Most of our projects have a reverse proxy service that take care of the https, c
 Eslint standard
 
 ```js
-  npm i eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard --save-dev
+  npm i eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise --save-dev
 ```
 
 Add `eslintConfig` to package.json
@@ -83,7 +83,7 @@ Add `eslintConfig` to package.json
 Eslint standard
 
 ```js
-  npm i eslint-config-standard eslint-plugin-node eslint-plugin-promise eslint-plugin-standard --save-dev
+  npm i eslint eslint-config-standard eslint-plugin-node eslint-plugin-promise --save-dev
 ```
 
 Add `eslintConfig` to package.json
